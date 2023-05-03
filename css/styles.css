@@ -170,7 +170,10 @@ p {
 Hero
 ===============
 */
-
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .hero {
   min-height: 100vh;
   background: var(--clr-primary-5);
@@ -197,17 +200,25 @@ Hero
   padding: 0.9rem 1.6rem;
   font-size: 1.25rem;
   background: var(--clr-white);
-  color: var(--clr-primary-5);
+  color: #cda090;
 }
 .hero-btn:hover {
   background: transparent;
   color: var(--clr-white);
   border-color: var(--clr-white);
 }
+
+.hero-image {
+  width: 70%;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  border: 10px solid white;
+}
 @media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('../images/main.jpeg') center/cover no-repeat;
+    background: #cda090;
   }
   .hero-banner {
     padding: 0;
@@ -550,7 +561,7 @@ Navbar
   }
   .nav-icon {
     margin-right: 0.7rem;
-    color: var(--clr-primary-5);
+    color: #cda090;
     font-size: 1.2rem;
     transition: var(--transition);
   }
