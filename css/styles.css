@@ -273,7 +273,7 @@ About
 }
 /*
 =============== 
-Services
+TechStack
 ===============
 */
 .services {
@@ -330,7 +330,7 @@ Services
 
 /*
 =============== 
-Featured Tours
+Portfolio
 ===============
 */
 
@@ -416,7 +416,7 @@ Footer
 ===============
 */
 .footer {
-  background: #cda090;
+  background: #fff;
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -429,7 +429,7 @@ Footer
   flex-wrap: wrap;
 }
 .footer-link {
-  color: var(--clr-white);
+  color: #cda090;
   text-transform: capitalize;
   font-size: 1rem;
   margin-right: 1rem;
@@ -442,7 +442,7 @@ Footer
 .footer-icon {
   font-size: 2rem;
   margin-right: 1rem;
-  color: var(--clr-white);
+  color: #cda090;
   transition: var(--transition);
 }
 .footer-icon:hover {
@@ -451,7 +451,7 @@ Footer
 .copyright {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
-  color: var(--clr-white);
+  color: #cda090;
 }
 .copyright span {
   margin-left: 0.5rem;
