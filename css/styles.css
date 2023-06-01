@@ -433,6 +433,14 @@ textarea {
   background-color: #cda090;
 }
 
+.contact-div {
+  text-align: center;
+}
+
+.contact-div a {
+  margin-right: 20px;
+}
+
 /*
 =============== 
 Footer
