@@ -75,7 +75,7 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
+  /* letter-spacing: var(--spacing); */
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -182,10 +182,14 @@ Hero
 }
 .hero {
   min-height: 100vh;
-  background: #cda090;
+  background: #b88775;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero-info {
+  margin-top: 30px;
 }
 .hero-banner {
   text-align: center;
@@ -200,7 +204,6 @@ Hero
   margin-left: auto;
   margin-right: auto;
   color: var(--clr-white);
-  letter-spacing: var(--spacing);
 }
 .hero-btn {
   padding: 0.9rem 0.6rem;
@@ -225,7 +228,7 @@ Hero
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background: #cda090;
+    background: #b88775;
   }
   .hero-banner {
     padding: 0;
@@ -283,7 +286,7 @@ TechStack
 ===============
 */
 .services {
-  background: #cda090;
+  background: #b88775;
 }
 .service {
   text-align: center;
@@ -305,6 +308,9 @@ TechStack
   }
   .service {
     margin-bottom: 0rem;
+  }
+  .tech-img {
+    width: 35%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -341,6 +347,15 @@ Portfolio
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
+
+.portfolio-link {
+  text-decoration: none;
+  color: var(--clr-grey-1);
+}
+
+/* .portfolio-link:visited {
+  color: #888;
+} */
 .tour-card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
@@ -598,7 +613,7 @@ Navbar
   font-size: 1rem;
 }
 .nav-link:hover {
-  color: var(--clr-primary-1);
+  color: var(--clr-grey-1);
   background: var(--clr-primary-8);
   padding-left: 2.25rem;
 }
@@ -607,10 +622,9 @@ Navbar
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-  padding-right: 60px;
 }
 .show-links {
-  height: 280px;
+  height: 200px;
 }
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
@@ -656,5 +670,27 @@ Navbar
   }
   .nav-icon:hover {
     color: var(--clr-primary-8);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+
+    width: 100%;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-toggle:checked ~ .nav-links {
+    height: auto;
   }
 }
