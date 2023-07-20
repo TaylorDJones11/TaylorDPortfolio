@@ -241,7 +241,7 @@ Hero
 @media screen and (max-width: 767px) {
   .hero-grid {
     display: block;
-    padding-left: 0;
+    padding: 5px;
   }
   .hero-image {
     display: none;
@@ -316,7 +316,7 @@ TechStack
     margin-bottom: 0rem;
   }
   .tech-img {
-    width: 25%;
+    width: 15%;
   }
 }
 
