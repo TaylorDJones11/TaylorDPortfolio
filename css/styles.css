@@ -630,7 +630,7 @@ Navbar
 }
 .nav-link {
   display: block;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   transition: var(--transition);
@@ -686,7 +686,7 @@ Navbar
   }
 
   .nav-link {
-    margin-right: 0.7rem;
+    margin-right: 0.5rem;
   }
   .nav-icon {
     margin-right: 0.7rem;
